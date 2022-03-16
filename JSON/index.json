@@ -1,0 +1,31 @@
+{
+    "animals":[
+        {
+            "id": 1,
+            "pet_name": "Frodo",
+            "species": "Dog",
+            "doctor": "Abidoral Machado",
+            "date": "14/03/2022",
+            "hour": "15:30",
+            "observations": "Walking difficulties. Diagnosis of hip dysplasia without surgery."
+        },
+        {
+            "id": 2,
+            "pet_name": "Camelia",
+            "species": "Rabbit",
+            "doctor": "Calvo Andreu",
+            "date": "22/02/2022",
+            "hour": "9:00",
+            "observations": "Pain signs when touching the belly, red feces, possible gut inflammation."
+        },
+        {
+            "id": 3,
+            "pet_name": "Bob",
+            "species": "Cat",
+            "doctor": "Rosa",
+            "date": "02/02/2022",
+            "hour": "11:15",
+            "observations": "Red eyes with thick and green mucus."
+        }
+    ]
+}
