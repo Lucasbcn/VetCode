@@ -15,15 +15,25 @@ fetchAgendaJSON().then(agenda => {
         let doctor = agenda.animals[index].doctor;
         let date = agenda.animals[index].date;
         cards.innerHTML += `
-        <section class="box-content h-15 w-80% p-4 border-4 from-slate-200 bg-teal-100">
-            <div>
+        <tr class="odd:bg-teal-100 even:bg-indigo-300">
+            <td>X</td>
+            <td>
                 <p>Pet Name: ${pet_name}</p>
                 <p>Dr. :${doctor}</p>
                 <p>Date: ${date}</p>
-            </div>
-        </section>
+            </td>
+            <td>EDIT</td>
+        </tr>
         `
         }
 })
 
 //json-server --watch agenda.json
+
+/*         <section class="box-content h-15 w-80% p-4 border-4 from-slate-200 bg-teal-100">
+            <div>
+                <p>Pet Name: ${pet_name}</p>
+                <p>Dr. :${doctor}</p>
+                <p>Date: ${date}</p>
+            </div>
+        </section> */
