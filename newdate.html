@@ -17,12 +17,34 @@
 
         <section class="box-border flex justify-center flex-col border-solid rounded-2xl h-1/2 w-80 bg-green-200">
 
-            <div class="box-border h-10 w-64 p-4 m-7 border-solid rounded-2xl bg-yellow-600"></div>
-            <div class="box-border h-10 w-64 p-4 m-7 mt-3 border-solid rounded-2xl bg-orange-500"></div>
-            <div class="box-border h-10 w-64 p-4 m-7 mt-3 border-solid rounded-2xl bg-yellow-300"></div>
-            <div class="box-border h-10 w-64 p-4 m-7 mt-3 border-solid rounded-2xl bg-yellow-200"></div>
-            <div class="box-border h-10 w-64 p-4 m-7 mt-3 border-solid rounded-2xl bg-yellow-100"></div>
-            <div class="box-border h-10 w-64 p-4 m-7 mt-3 border-solid rounded-2xl bg-orange-200"></div>
+            <form action="PONER PAGINA PHP AQUI">
+
+            <div class="box-border h-10 w-64 p-2 m-7 border-solid flex justify-center rounded-2xl bg-yellow-600">
+                <input class="box-border h-6 w-56 p-1" type="text" id="name" name="name" value="">
+            </div>
+
+            <div class="box-border h-10 w-64 p-2 m-7 mt-3 border-solid flex justify-center rounded-2xl bg-orange-500">
+                <input class="box-border h-6 w-56 p-1" type="text" id="species" name="species" value="">
+            </div>
+
+            <div class="box-border h-10 w-64 pl-4 p-2 m-7 mt-3 border-solid rounded-2xl bg-yellow-300">
+                <select class="box-border h-6 w-56 p-1 bg-white" id="doctor" name="doctor">
+                  <option value="saab">Dr. Aparicio</option>
+                  <option value="audi">Dr. Abidoral</option>
+                  <option value="fiat">Dr. Calvo</option>
+                  <option value="audi">Dra. Rosa</option>
+                  <option value="volvo">Dr. Vidal</option>
+                </select>
+            </div>
+
+            <div class="box-border h-10 w-64 pl-4 p-2 m-7 mt-3 border-solid rounded-2xl bg-yellow-200">
+                <input class="box-border h-6 w-56 p-1 bg-white" type="datetime-local" id="date" name="date">
+            </div>
+
+            <div class="box-border max-h-screen w-64 pl-4 p-2 m-7 mt-3 border-solid rounded-2xl bg-orange-200">
+                <textarea id="story" name="story" rows="4" cols="17">
+                </textarea>
+            </div>
         
         </section>
         
@@ -35,9 +57,11 @@
             </div>
             <div class="box-border h-20 w-64 border-solid rounded-3xl bg-green-600">
                 <button>
-                    <img class= "h-12" src="./IMGSRC/Vector.svg" alt="refresh" >
+                    <img class= "h-12" src="./IMGSRC/Vector.svg" alt="refresh">
+                    <input type="submit" value="">
                 </button>
             </div>
+        </form>
     
         </section>
 
