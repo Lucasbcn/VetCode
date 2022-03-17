@@ -15,14 +15,22 @@ fetchAgendaJSON().then(agenda => {
         let doctor = agenda.animals[index].doctor;
         let date = agenda.animals[index].date;
         cards.innerHTML += `
-        <tr class="odd:bg-teal-100 even:bg-indigo-300">
-            <td>X</td>
+        <tr class="flex justify-between odd:bg-green-100 even:bg-cyan-100 p-4 m-1 rounded-lg" >
+            <td class="flex self-center">
+                <button class="bg-white rounded-full p-2">
+                    <img src="../IMGSRC/close.svg" alt="">
+                </button>
+            </td>
             <td>
                 <p>Pet Name: ${pet_name}</p>
-                <p>Dr. :${doctor}</p>
+                <p>Dr. : ${doctor}</p>
                 <p>Date: ${date}</p>
             </td>
-            <td>EDIT</td>
+            <td class="flex self-center">
+                <button class="bg-white rounded-full p-2">
+                    <img src="./IMGSRC/Mode edit.svg" alt="boli">
+                </button>
+            </td>
         </tr>
         `
         }

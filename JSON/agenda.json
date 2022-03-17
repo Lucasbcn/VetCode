@@ -26,6 +26,15 @@
       "date": "02/02/2022",
       "hour": "11:15",
       "observations": "Red eyes with thick and green mucus."
+    },
+    {
+      "id": 4,
+      "pet_name": "Nino",
+      "species": "Dog",
+      "doctor": "Abidoral",
+      "date": "17/03/2022",
+      "hour": "11:30",
+      "observations": "Stomach pain"
     }
   ]
 }
