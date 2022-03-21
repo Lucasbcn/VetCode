@@ -18,19 +18,18 @@
             foreach ($data["pet"] as $pet) {
                 echo <<<TAG
                 <table class="min-w-full">
-                <tbody id="cards" class="grid gap-y-2">
+                <tbody class="grid gap-y-2">
                     <tr class="odd:bg-green-100 even:bg-cyan-100 flex justify-between p-4 m-1 rounded-lg" >
                         <td class="flex self-center">
-                            <button class="bg-white rounded-full p-2">
+                            <a href="?action=delete&id={$pet->getId()}" class="bg-white rounded-full p-2">
                                 <img src="./IMGSRC/close.svg" alt="">
-                            </button>
+                            </a>
                         </td>
                         <td>
-                            <p>ID: {$pet->getId()};</p>
                             <p>Pet Name: {$pet->getPetName()};</p>
+                            <p>Species: {$pet->getSpecies()};</p>
                             <p>Dr. : {$pet->getDoctor()};</p>
                             <p>Date: {$pet->getDate()};</p>
-                            <p>Observations: {$pet->getObservations()};</p>
                         </td>
                         <td class="flex self-center">
                             <button class="bg-white rounded-full p-2">

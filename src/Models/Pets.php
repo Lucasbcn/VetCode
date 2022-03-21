@@ -9,16 +9,18 @@ class Pets{
     private ?int $id;
     private string $pet_name;
     private string $doctor;
+    private string $species;
     private string $date;
     private string $observations;
 
     private $database;
     private $table="dates";
 
-    public function __construct(int $id = null, string $pet_name = '', string $doctor = '', string $observations = '', string $date = '')
+    public function __construct(int $id = null, string $pet_name = '', string $species = '', string $doctor = '', string $observations = '', string $date = '')
     {
         $this->id = $id;
         $this->pet_name = $pet_name;
+        $this->species = $species;
         $this->doctor = $doctor;
         $this->date = $date;
         $this->observations = $observations;
@@ -34,7 +36,7 @@ class Pets{
         $petsArray = $query->fetchAll();
         $petsList = [];
         foreach ($petsArray as $pets) {
-            $petsItem = new Pets ($pets["id"], $pets["pet_name"], $pets["doctor"], $pets["observations"], $pets["date"]);
+            $petsItem = new Pets ($pets["id"], $pets["pet_name"], $pets["species"], $pets["doctor"], $pets["observations"], $pets["date"]);
 
             array_push($petsList, $petsItem);
         }
@@ -45,13 +47,18 @@ class Pets{
         return $this->id;
     }
 
+    public function getPetName(){
+        return $this->pet_name;
+    }
+
+    public function getSpecies(){
+        return $this->species;
+    }
+
     public function getDoctor(){
         return $this->doctor;
     }
 
-    public function getPetName(){
-        return $this->pet_name;
-    }
 
     public function getObservations(){
         return $this->observations;
@@ -59,6 +66,12 @@ class Pets{
 
     public function getDate(){
         return $this->date;
+    }
+    public function findById($id){
+        $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}");
+        $result = $query->fetchAll();
+
+        return new Pets($result[0]["id"], ) //TE HAS QUEDADO AQUI
     }
 }
 
