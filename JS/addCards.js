@@ -37,11 +37,3 @@ fetchAgendaJSON().then(agenda => {
 })
 
 //json-server --watch agenda.json
-
-/*         <section class="box-content h-15 w-80% p-4 border-4 from-slate-200 bg-teal-100">
-            <div>
-                <p>Pet Name: ${pet_name}</p>
-                <p>Dr. :${doctor}</p>
-                <p>Date: ${date}</p>
-            </div>
-        </section> */
