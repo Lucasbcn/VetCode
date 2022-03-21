@@ -37,4 +37,3 @@ fetchAgendaJSON().then(agenda => {
 })
 
 //json-server --watch agenda.json
-//TEST TEST 
