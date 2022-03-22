@@ -12,29 +12,28 @@ class Database
     public function_construct()
     {
 
-        try{
+        try {
             $this->mysql = $this->getConnection();
 
-            catch (PDOException $ex) {
-                echo $ex->getMessage();
+        }  catch (PDOException $ex) {
+            echo $ex->getMessage();
             
         }
     }
-}
+
 
     private function getConnection()
     {
         $host= "localhost";
-        $user ="root";
-        $pass ="";
+        $user = "root";
+        $pass = "";
         $database = "consultant";
 
         $charset= "utf-8";
-        $options = [PDO::ATTR_DEFAULT_FETCH_MODE =>PDO:: FETCH_ASSOC];
+        $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
         $pdo = new pdo("mysql:host={$host};dbname={$database};charset{$charset)", $user,$pass,$options);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO:ERRMODE_EXCEPTION);
 
             return $pdo;
         }
-    }
 }
