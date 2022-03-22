@@ -16,6 +16,12 @@ class PetController {
 
         if(isset($_GET["action"]) && ($_GET["action"] == "create")){
             $this->create();
+            return;
+        }
+        
+        if(isset($_GET["action"]) && ($_GET["action"] == "store")){
+            $this->store($_POST);
+            return;
         }
 
         $this->index();
@@ -37,6 +43,13 @@ class PetController {
     }
 
     public function create(){
-        new View("createPet"); //!!!!!!!!!!!!!!!   MIN 31:00:00   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+        new View("newDate");
+    }
+
+    public function store(array $request){
+        $newPet = new Pets(null, $request["pet_name"], $request["species"], $request["doctor"], $request["date"], $request["observations"]);
+        $newPet->save();
+
+        $this->index();
     }
 }

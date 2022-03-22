@@ -8,9 +8,10 @@
     <nav class="max-w-screen bg-indigo-300 flex justify-between padding p-2 mb-6">
         <img class="justify-self-start"src="./IMGSRC/Veterinarian.svg" alt="patas">
         <h1 class="self-center text-3xl">VETCODE</h1>
+        <a href="?action=create">
         <button class="rounded-full bg-white">
             <img src="./IMGSRC/Plus Math.svg" alt="plus">
-        </button>
+        </button></a>
     </nav>
     <main class="bg-white flex-grow">
 
@@ -32,7 +33,7 @@
                             <p>Date: {$pet->getDate()};</p>
                         </td>
                         <td class="flex self-center">
-                            <a href="?action=create" class="bg-white rounded-full p-2">
+                            <a class="bg-white rounded-full p-2">
                                 <img src="./IMGSRC/Mode edit.svg" alt="boli">
                             </a>
                         </td>

@@ -8,15 +8,15 @@ class Pets{
     
     private ?int $id;
     private string $pet_name;
-    private string $doctor;
     private string $species;
-    private string $date;
+    private string $doctor;
+    private ?string $date;
     private string $observations;
 
     private $database;
     private $table="dates";
 
-    public function __construct(int $id = null, string $pet_name = '', string $species = '', string $doctor = '', string $observations = '', string $date = '')
+    public function __construct(int $id = null, string $pet_name = '', string $species = '', string $doctor = '', string $date = '', string $observations = '')
     {
         $this->id = $id;
         $this->pet_name = $pet_name;
@@ -36,7 +36,7 @@ class Pets{
         $petsArray = $query->fetchAll();
         $petsList = [];
         foreach ($petsArray as $pets) {
-            $petsItem = new Pets ($pets["id"], $pets["pet_name"], $pets["species"], $pets["doctor"], $pets["observations"], $pets["date"]);
+            $petsItem = new Pets($pets["id"], $pets["pet_name"], $pets["species"], $pets["doctor"], $pets["date"], $pets["observations"]);
 
             array_push($petsList, $petsItem);
         }
@@ -74,10 +74,17 @@ class Pets{
 
         return new Pets($result[0]["id"], $result[0]["pet_name"], $result[0]["species"], $result[0]["doctor"], $result[0]["date"], $result[0]["observations"]);
     }
+
+
     
     
     public function delete(){
         $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
+    }
+
+    public function save(){
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`pet_name`, `species`, `doctor`, `date`, `observations`) VALUES ('$this->pet_name', '$this->species', '$this->doctor', '$this->date', '$this->observations');");
+
     }
 }
 
