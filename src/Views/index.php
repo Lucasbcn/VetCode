@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace App\Views;
 
 use App\Controllers\CodersController;
 

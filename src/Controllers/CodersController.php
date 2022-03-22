@@ -3,10 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\Coders;
+use App\Core\View;
 
 class CodersController{
 
-    public function_construct()
+    public function __construct()
     {
         $this->index();
     } 
@@ -15,6 +16,9 @@ class CodersController{
 
         $coder = new Coders;
         $coders = $coder->all();
+
+        new View("coderList", ["coder" => $coders]);
+
     }
 
 }
