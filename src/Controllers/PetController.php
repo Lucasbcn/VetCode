@@ -24,10 +24,10 @@ class PetController {
         new View("petList",["pet"=>$pets]);
     }
 
-    public function delte($id){
+    public function delete($id){
         $petHelper = new Pets();
         $pet = $petHelper->findById($id);
-        $coder->delete();
+        $pet->delete();
 
         $this->index();
     }
