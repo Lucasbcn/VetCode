@@ -14,6 +14,10 @@ class PetController {
             return;
         }
 
+        if(isset($_GET["action"]) && ($_GET["action"] == "create")){
+            $this->create()
+        }
+
         $this->index();
     }
 
@@ -30,5 +34,9 @@ class PetController {
         $pet->delete();
 
         $this->index();
+    }
+
+    public function create(){
+        new View("createPet"); //!!!!!!!!!!!!!!!   MIN 31:00:00   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
     }
 }
