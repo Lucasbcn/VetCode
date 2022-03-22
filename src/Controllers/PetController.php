@@ -15,7 +15,7 @@ class PetController {
         }
 
         if(isset($_GET["action"]) && ($_GET["action"] == "create")){
-            $this->create()
+            $this->create();
         }
 
         $this->index();
