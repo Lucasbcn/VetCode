@@ -37,8 +37,7 @@
                 </div>
                 <p class="ml-7 mt-2">Observations:</p>
                 <div class="box-border max-h-screen w-64 pl-4 p-2 m-2 mt-3 ml-7 mb-7 border-solid rounded-2xl bg-white">
-                    <textarea id="story" name="observations" rows="4" cols="17">
-                    </textarea>
+                    <textarea id="story" name="observations" rows="4" cols="17"></textarea>
                 </div>
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
                     <div class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400">
