@@ -75,9 +75,6 @@ class Pets{
         return new Pets($result[0]["id"], $result[0]["pet_name"], $result[0]["species"], $result[0]["doctor"], $result[0]["date"], $result[0]["observations"]);
     }
 
-
-    
-    
     public function delete(){
         $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
     }
