@@ -33,7 +33,7 @@
                             <p>Date: {$pet->getDate()};</p>
                         </td>
                         <td class="flex self-center">
-                            <a class="bg-white rounded-full p-2">
+                            <a href="?action=edit&id={$pet->getId()}" class="bg-white rounded-full p-2">
                                 <img src="./IMGSRC/Mode edit.svg" alt="boli">
                             </a>
                         </td>

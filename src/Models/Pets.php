@@ -10,7 +10,7 @@ class Pets{
     private string $pet_name;
     private string $species;
     private string $doctor;
-    private ?string $date;
+    private string $date;
     private string $observations;
 
     private $database;
@@ -82,6 +82,19 @@ class Pets{
     public function save(){
         $this->database->mysql->query("INSERT INTO `{$this->table}` (`pet_name`, `species`, `doctor`, `date`, `observations`) VALUES ('$this->pet_name', '$this->species', '$this->doctor', '$this->date', '$this->observations');");
 
+    }
+
+    public function rename($pet_name, $species, $doctor, $date, $observations){
+        $this->pet_name = $pet_name;
+        $this->species = $species;
+        $this->doctor = $doctor;
+        $this->date = $date;
+        $this->observations = $observations;
+
+    }
+
+    public function update(){
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `pet_name` = '{$this->pet_name}', `species` = '{$this->species}', `doctor` = '{$this->doctor}', `date` = '{$this->date}', `observations` = '{$this->observations}' WHERE `id` = {$this->id}");
     }
 }
 
