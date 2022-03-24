@@ -1,5 +1,6 @@
-***VetCode Clinic*** 
+*VetCode*
 
+***VetCode Clinic*** is an application created for scheduling appointments at the reception desk of a veterinary clinic. In the application, you can create, save, edit and delete quotes that are kept reserved in a private database. 
 
 <p align="center">
 < video>
