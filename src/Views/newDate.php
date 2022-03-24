@@ -36,7 +36,7 @@
                 </div>
                 <p class="ml-7 mt-2">Date:</p>
                 <div class="box-border h-10 w-64 pl-4 p-2 m-2 mt-3 ml-7 border-solid rounded-2xl bg-white flex justify-center md:w-96">
-                    <input class="box-border h-6 w-56 p-1 bg-white" type="date" id="date" name="date">
+                    <input class="box-border h-6 w-56 p-1 bg-white" type="datetime-local" id="date" name="date">
                 </div>
                 <p class="ml-7 mt-2">Observations:</p>
                 <div class="box-border max-h-screen w-64 pl-4 p-2 m-2 mt-3 ml-7 mb-7 border-solid rounded-2xl bg-white">
