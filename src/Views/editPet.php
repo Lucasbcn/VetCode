@@ -38,7 +38,7 @@
                 </div>
                 <p class="ml-7 mt-2">Observations:</p>
                 <div class="box-border max-h-screen w-64 pl-4 p-2 m-2 mt-3 ml-7 mb-7 border-solid rounded-2xl bg-white">
-                    <input id="observations" name="observations" rows="4" cols="17" type="text" required value ='<?php echo $data["pet"]->getObservations() ?>'>
+                    <textarea class="w-full" id="observations" name="observations" rows="4" cols="17" type="text"><?php echo $data["pet"]->getObservations() ?></textarea>
                 </div>
 
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">

@@ -2,3 +2,4 @@
         <a href=".">
             <img class= "h-12" src="./public/IMGSRC/Vector.svg" alt="refresh" >
         </a>
+</footer>

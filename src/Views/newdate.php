@@ -13,7 +13,7 @@
         <h1 class="flex self-center ml-11 text-3xl">NEW DATE</h1>
     </nav>
 
-    <main class="bg-white p-7 pt-2 pb-1 h-42 flex">
+    <main class="bg-white p-7 pt-2 pb-1 h-42 flex justify-center">
         <section class="box-border border-solid rounded-2xl h-1/2 w-80 bg-green-200 md:w-full">
             <form action="?action=store" method="post">
                 <p class="ml-7 mt-2">Pet Name:</p>
@@ -27,11 +27,11 @@
                 <p class="ml-7 mt-2">Dr.:</p>
                 <div class="box-border h-14 w-64 pl-4 p-2 m-2 mt-3 ml-7 border-solid rounded-2xl bg-white flex justify-center md:w-96">
                     <select class="box-border h-9 w-56 p-1 bg-white" id="doctor" name="doctor">
-                        <option value="aparicio">Aparicio</option>
-                        <option value="abidoral">Abidoral</option>
-                        <option value="calvo">Calvo</option>
-                        <option value="rosa">Rosa</option>
-                        <option value="vidal">Vidal</option>
+                        <option value="Aparicio">Aparicio</option>
+                        <option value="Abidoral">Abidoral</option>
+                        <option value="Calvo">Calvo</option>
+                        <option value="Rosa">Rosa</option>
+                        <option value="Vidal">Vidal</option>
                     </select>
                 </div>
                 <p class="ml-7 mt-2">Date:</p>
@@ -40,7 +40,7 @@
                 </div>
                 <p class="ml-7 mt-2">Observations:</p>
                 <div class="box-border max-h-screen w-64 pl-4 p-2 m-2 mt-3 ml-7 mb-7 border-solid rounded-2xl bg-white">
-                    <textarea class="w-full form-control" id="story" type="text name="observations" rows="4" cols="17"></textarea>
+                    <textarea class="w-full form-control" id="story" type="text" name="observations" rows="4" cols="17"></textarea>
                 </div>
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
                         <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" type="submit" value="Crear">

@@ -9,7 +9,7 @@
         <img class="justify-self-start"src="./public/IMGSRC/Veterinarian.svg" alt="patas">
         <h1 class="self-center text-3xl">VETCODE</h1>
         <a href="?action=create">
-        <button class="rounded-full bg-white">
+        <button class="rounded-full bg-white mt-3">
             <img src="./public/IMGSRC/Plus Math.svg" alt="plus">
         </button></a>
     </nav>
