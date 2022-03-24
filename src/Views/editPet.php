@@ -5,8 +5,10 @@
 <body>
 
     <nav class=" top-0 h-18 bg-indigo-300 flex padding p-2">
-        <img class="justify-self-start"src="./IMGSRC/Veterinarian.svg" alt="patas">
-        <h1 class="flex self-center ml-11 text-3xl">Edit</h1>
+        <a href=".">
+            <img class="justify-self-start"src="./public/IMGSRC/Veterinarian.svg" alt="patas">
+        </a>
+        <h1 class="flex self-center ml-11 text-3xl">EDIT</h1>
     </nav>
 
     <main class="bg-white p-7 pt-2 pb-1 flex flex-col items-center h-42">
@@ -21,8 +23,8 @@
                     <input class="box-border h-6 w-56 p-1" type="text" id="species" name="species" required value ='<?php echo $data["pet"]->getSpecies() ?>'>
                 </div>
                 <p class="ml-7 mt-2">Dr. :</p>
-                <div class="box-border h-10 w-64 pl-4 p-2 m-2 mt-3 ml-7 border-solid rounded-2xl bg-white">
-                    <select class="box-border h-6 w-56 p-1 bg-white" id="doctor" name="doctor" required value ='<?php echo $data["pet"]->getDoctor() ?>'>
+                <div class="box-border h-14 w-64 pl-4 p-2 m-2 mt-3 ml-7 border-solid rounded-2xl bg-white">
+                    <select class="box-border h-9 w-56 p-1 bg-white" id="doctor" name="doctor" required value ='<?php echo $data["pet"]->getDoctor() ?>'>
                         <option value="aparicio">Aparicio</option>
                         <option value="abidoral">Abidoral</option>
                         <option value="calvo">Calvo</option>
@@ -36,12 +38,18 @@
                 </div>
                 <p class="ml-7 mt-2">Observations:</p>
                 <div class="box-border max-h-screen w-64 pl-4 p-2 m-2 mt-3 ml-7 mb-7 border-solid rounded-2xl bg-white">
-                    <textarea id="story" name="observations" rows="4" cols="17" required value ='<?php echo $data["pet"]->getObservations() ?>'></textarea>
+                    <input id="observations" name="observations" rows="4" cols="17" type="text" required value ='<?php echo $data["pet"]->getObservations() ?>'>
                 </div>
+
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
-                    <input type="submit" value="edit">
-                    <input type="submit" value="reset">
-                </section> 
+                        <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" type="submit" value="edit">
+                            <img src="./public/IMGSRC/close.svg" alt="decline">
+                        </button>
+                        <button class="box-border flex justify-center h-20 w-32 border-solid rounded-3xl bg-green-400" action="?action=store">
+                            <img src="./public/IMGSRC/done_black_24dp.svg" alt="accept" >
+                        </button>
+                </section>
+
 
             </form>
         </section>
