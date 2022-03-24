@@ -23,8 +23,4 @@ The project was developed with the intention of practicing Fake API and Database
 ***VetCode Clinic*** was created and developed by the team:
 Sergi Aparicio, Àlex Vidal, Daniel Calvo, Lucas Abidoral and Scarlet Rosa.
 
-We thank Factoria F5 and our classmates who helped us a lot <3
-
-
-
-Translated with www.DeepL.com/Translator (free version)
+We thank Factoria F5 and our classmates who helped us a lot ❤️
