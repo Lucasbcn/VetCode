@@ -43,9 +43,9 @@
                     <textarea class="w-full form-control" id="story" type="text" name="observations" rows="4" cols="17"></textarea>
                 </div>
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
-                        <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400"   type="submit" value="Crear">
+                        <a class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" href="." >
                             <img src="./public/IMGSRC/close.svg" alt="decline">
-                        </button>
+                        </a>
                         <button class="box-border flex justify-center h-20 w-32 border-solid rounded-3xl bg-green-400" action="?action=store">
                             <img src="./public/IMGSRC/done_black_24dp.svg" alt="accept" >
                         </button>

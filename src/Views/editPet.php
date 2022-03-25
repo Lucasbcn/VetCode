@@ -42,9 +42,9 @@
                 </div>
 
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
-                        <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" type="submit" value="edit">
+                        <a class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" href="." >
                             <img src="./public/IMGSRC/close.svg" alt="decline">
-                        </button>
+                        </a>
                         <button class="box-border flex justify-center h-20 w-32 border-solid rounded-3xl bg-green-400" action="?action=store">
                             <img src="./public/IMGSRC/done_black_24dp.svg" alt="accept" >
                         </button>
