@@ -8,7 +8,7 @@
 
     <nav class=" top-0 h-18 bg-indigo-300 flex padding p-2">
         <a href=".">
-            <img class="justify-self-start"src="./public/IMGSRC/Veterinarian.svg" alt="patas">
+            <img class="justify-self-start "src="./public/IMGSRC/Veterinarian.svg" alt="patas">
         </a>   
         <h1 class="flex self-center ml-11 text-3xl">NEW DATE</h1>
     </nav>
@@ -43,7 +43,7 @@
                     <textarea class="w-full form-control" id="story" type="text" name="observations" rows="4" cols="17"></textarea>
                 </div>
                 <section class="box-border flex m-2 h-32 max-w-screen p-2">
-                        <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400" type="submit" value="Crear">
+                        <button class="box-border flex justify-center mr-5 h-20 w-32 border-solid rounded-3xl bg-red-400"   type="submit" value="Crear">
                             <img src="./public/IMGSRC/close.svg" alt="decline">
                         </button>
                         <button class="box-border flex justify-center h-20 w-32 border-solid rounded-3xl bg-green-400" action="?action=store">
@@ -55,9 +55,11 @@
         </section>
     </main>
     
-    <?php
-        require_once("Components/footer.php")
-    ?>
+    <footer class="bg-indigo-300 flex justify-center p-2 w-full mt-2">        
+        <a href=".">
+            <img class= "h-12" src="" alt="" >
+        </a>
+</footer>
 
 </body>
 

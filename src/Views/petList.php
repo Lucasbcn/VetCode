@@ -10,7 +10,7 @@
         <h1 class="self-center text-3xl">VETCODE</h1>
         <a href="?action=create">
         <button class="rounded-full bg-white mt-3">
-            <img src="./public/IMGSRC/Plus Math.svg" alt="plus">
+            <img class="animate-pulse" src="./public/IMGSRC/Plus Math.svg" alt="plus">
         </button></a>
     </nav>
     <main class="bg-white flex-grow">

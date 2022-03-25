@@ -55,9 +55,11 @@
         </section>
     </main>
     
-    <?php
-    require_once("Components/footer.php");
-    ?>
+    <footer class="bg-indigo-300 flex justify-center p-2 w-full mt-2">        
+        <a href=".">
+            <img class= "h-12" src="" alt="" >
+        </a>
+</footer>
 
 </body>
 
