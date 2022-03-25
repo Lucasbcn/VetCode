@@ -4,7 +4,7 @@
 In the application, you can create, save, edit and delete appointments that are kept reserved in a private database
 
 <p align="center">
-<img src="https://github.com/Lucasbcn/VetCode/blob/main/public/IMGSRC/Captura%20de%20pantalla%20de%202022-03-25%2010-30-50.png" alt="HomePage" width="700" height="300">
+<img src="https://github.com/Lucasbcn/VetCode/blob/main/public/IMGSRC/Captura%20de%20pantalla%20de%202022-03-25%2010-30-50.png" alt="HomePage" width="600" height="300">
 </p>
 
 The project was developed with the intention of practicing Fake API, Database and PHP.
