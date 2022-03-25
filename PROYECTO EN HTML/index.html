@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <nav class="max-w-screen bg-indigo-300 flex justify-between padding p-2 mb-6">
+        <img class="justify-self-start"src="./IMGSRC/Veterinarian.svg" alt="patas">
+        <h1 class="self-center text-3xl">VETCODE</h1>
+        <button class="rounded-full bg-white">
+            <img src="./IMGSRC/Plus Math.svg" alt="plus">
+        </button>
+    </nav>
+    <main class="bg-white flex-grow">
+        <table class="min-w-full">
+            <tbody id="cards" class="grid gap-y-2"></tbody>
+        </table>
+
+    </main>
+    <footer class="bg-indigo-300 flex justify-center p-2 w-full mt-2">        
+        <button>
+            <img class= "h-12" src="./IMGSRC/Vector.svg" alt="refresh" >
+        </button>
+    </footer>
+
+<script src="./JS/addCards.js"></script>
+</body>
+</html>
