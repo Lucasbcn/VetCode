@@ -31,7 +31,6 @@
                             <div class="flex flex-row"><p class="font-semibold">Species:&nbsp;</p><p>{$pet->getSpecies()}</p></div>
                             <div class="flex flex-row"><p class="font-semibold">Dr. :&nbsp;</p><p>{$pet->getDoctor()}</p></div>
                             <div class="flex flex-row"><p class="font-semibold">Date:&nbsp;</p><p>{$pet->getDate()}</p></div>
-                            <div class="flex flex-row"><p class="font-semibold">Obs:&nbsp;</p><p>{$pet->getObservations()}</p></div>
                         </td>
                         <td class="flex self-center">
                             <a href="?action=edit&id={$pet->getId()}" class="bg-white rounded-full p-2">
