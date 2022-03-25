@@ -25,11 +25,11 @@
                 <p class="ml-7 mt-2">Dr. :</p>
                 <div class="box-border h-14 w-64 pl-4 p-2 m-2 mt-3 ml-7 border-solid rounded-2xl bg-white">
                     <select class="box-border h-9 w-56 p-1 bg-white" id="doctor" name="doctor" required value ='<?php echo $data["pet"]->getDoctor() ?>'>
-                        <option value="aparicio">Aparicio</option>
-                        <option value="abidoral">Abidoral</option>
-                        <option value="calvo">Calvo</option>
-                        <option value="rosa">Rosa</option>
-                        <option value="vidal">Vidal</option>
+                        <option value="Aparicio">Aparicio</option>
+                        <option value="Abidoral">Abidoral</option>
+                        <option value="Calvo">Calvo</option>
+                        <option value="Rosa">Rosa</option>
+                        <option value="Vidal">Vidal</option>
                     </select>
                 </div>
                 <p class="ml-7 mt-2">Date:</p>
